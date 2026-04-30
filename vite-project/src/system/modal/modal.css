@@ -1,0 +1,10 @@
+.Modal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.582) !important;
+    /* margin: 50px; */
+}
+
+

@@ -1,0 +1,33 @@
+/* 
+body{
+    padding: 10px;
+    box-sizing: border-box;
+} */
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    /* branding */
+
+  --Brand: blueviolet;
+
+
+  /* Theme */
+
+  --Black:black;
+  --White:white;
+
+
+  /* shades */
+
+  --LiteWhite:whitesmoke;
+  --LiteBlack:grey;
+
+}

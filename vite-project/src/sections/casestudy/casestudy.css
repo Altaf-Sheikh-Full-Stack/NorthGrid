@@ -1,0 +1,43 @@
+.CaseStudy {
+
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.CaseStudy-carousel {
+  padding: 50px;
+  display: flex;
+  overflow: auto;
+  gap: 30px;
+}
+
+.CaseStudy-Carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.CaseStudy-Box {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex: 0 0 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.CaseStudy-Box-Imgs {
+  padding: 20px;
+}
+
+.CaseStudy-Img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.CaseStudy-Info {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

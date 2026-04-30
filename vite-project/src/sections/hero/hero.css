@@ -1,0 +1,44 @@
+.Hero {
+  display: flex;
+  margin-top: 10px !important;
+}
+
+.Hero-info {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.Hero-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Hero-info-text h1 {
+  line-height: 110%;
+}
+
+.Hero-info-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Hero-Content {
+  width: 50%;
+  display: flex;
+}
+
+.Hero-Content-Child-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 10/10;
+  background-image: url("../../assets/women-blur.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

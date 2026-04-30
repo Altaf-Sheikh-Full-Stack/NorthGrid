@@ -1,0 +1,19 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar-Content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.Navbar-Content p{
+    cursor: pointer;
+}
+
+.Navbar-Content p:hover{
+    color: blue !important;
+}
