@@ -4,6 +4,8 @@ import ModalContext from "../../../context/modal"
 import Text from "../../../system/text/text"
 import './more-info.css'
 import Button from "../../../system/button/button"
+
+
 const MoreInfo = () => {
 
     const modal = ModalContext((s) => s.modal)
@@ -27,13 +29,17 @@ const MoreInfo = () => {
                 </Box>
             </Box>
 
-            <Box>
-                {modal?.more.map((data) => (
-                    <Box>
-                        <Text>{data.problem}</Text>
-                        <Text>{data.solution}</Text>
-                    </Box>
-                ))}
+            <Box className="MoreInfo-Problem" >
+                <Text>Problem & Solution</Text>
+                <Box className="MoreInfo-Problem-Parent">
+
+                    {modal?.more.map((data) => (
+                        <Box className="MoreInfo-Problem-Card" backgroundColor="LiteWhite" borderRadius="half">
+                            <Box backgroundColor="White" borderRadius="half" className="MoreInfo-Problem-Card-Problem"><Text >{data.problem}</Text></Box>
+                            <Box className="MoreInfo-Problem-Card-Solution" borderRadius="half"><Text>{data.solution}</Text></Box>
+                        </Box>
+                    ))}
+                </Box>
             </Box>
 
         </Modal>

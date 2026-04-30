@@ -19,7 +19,7 @@ const Modal = ({ children, open }: ModalProbs) => {
     return (
 
         <div className='Modal'>
-            <Section backgroundColor='White'>
+            <Section  backgroundColor='White'>
                 {children}
             </Section>
         </div>

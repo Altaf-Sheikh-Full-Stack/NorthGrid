@@ -6,6 +6,9 @@ import './hero.css'
 import Box from "../../system/box/box"
 
 const Hero = () => {
+
+
+
     return (
         <Section className="Hero">
             <Box className="Hero-info" backgroundColor="Brand">
