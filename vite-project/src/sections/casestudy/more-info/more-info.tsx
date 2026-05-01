@@ -20,7 +20,7 @@ const MoreInfo = () => {
 
 
                 <Box className="MoreInfo-Info">
-                    <Text size="semiLarge" type="heading" font="playful">{modal?.heading}</Text>
+                    <Text size="large" type="heading" font="playful">{modal?.name}</Text>
                     <Box className="MoreInfo-Info-Buttons">
                         <Button onClick={close} backgroundColor="LiteWhite" rounded="large" size="large">Close</Button>
                         <Button backgroundColor="Brand" color="light" rounded="large" size="large">Visit website</Button>
@@ -30,7 +30,7 @@ const MoreInfo = () => {
             </Box>
 
             <Box className="MoreInfo-Problem" >
-                <Text>Problem & Solution</Text>
+                <Text className="MoreInfo-Problem-Heading" size="semiLarge" type="heading" font="playful">How we solved the problem to reach outcome</Text>
                 <Box className="MoreInfo-Problem-Parent">
 
                     {modal?.more.map((data) => (

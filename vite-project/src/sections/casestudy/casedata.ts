@@ -4,59 +4,38 @@ import img2 from '../../assets/Frame 10 (2).webp'
 const casedata = [
     {
 
-        img: img,
-        name: "Linkmatch.com is a end to end ai powered CRM software ",
+        img: img, 
+        name:"How we increased checkout conversion from 1.9% to 2.4% in weeks by fixing cart abandonment problem",
+        heading: "Linkmatch.com is a end to end ai powered CRM software ",        
+        tech: {
+
+            research: ['chatgpt', 'dribble'],
+            design: ['figma'],
+            frontend: ['React'],
+            backend: ['node', 'express'],
+            testing: ['A/B test', 'end to end'],
+            deployment: ['docker', 'aws'],
+            markting: ['product hunt', 'linkdin', 'facebook']
+        },
         more: [
-
-            {
-                problem: 'Problem for linkmatch as das das das ads ',
-                solution: "safdsf asd as das das das d"
-            },
-             {
-                problem: 'Problem for linkmatch 2',
-                solution: "safdsf 2"
-            },
-              {
-                problem: 'Problem for linkmatch as das das das ads ',
-                solution: "safdsf asd as das das das d"
-            },
-             {
-                problem: 'Problem for linkmatch 2',
-                solution: "safdsf 2"
-            },
-                {
-                problem: 'Problem for linkmatch as das das das ads ',
-                solution: "safdsf asd as das das das d"
-            },
-             {
-                problem: 'Problem for linkmatch 2',
-                solution: "safdsf 2"
-            },
-              {
-                problem: 'Problem for linkmatch as das das das ads ',
-                solution: "safdsf asd as das das das d"
-            },
-             {
-                problem: 'Problem for linkmatch 2',
-                solution: "safdsf 2"
-            }
-
-        ],
+            { problem: 'Problem 1', solution: 'Solution 1' },
+            { problem: 'Problem 2', solution: 'Solution 2' }
+        ]
 
     },
 
-    {
-        img: img2,
-        name: "surething.io is a multi ai agent sales chatbot",
-        more: [
+    // {
+    //     img: img2,
+    //     name: "surething.io is a multi ai agent sales chatbot",
+    //     more: [
 
-            {
-                problem: 'dsas',
-                solution: "safdsf"
-            }
+    //         {
+    //             problem: 'dsas',
+    //             solution: "safdsf"
+    //         }
 
-        ],
-    }
+    //     ],
+    // }
 ]
 
 

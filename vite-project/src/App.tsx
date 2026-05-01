@@ -4,6 +4,7 @@ import About from "./sections/about/about"
 import CaseStudy from "./sections/casestudy/casestudy"
 import Pricing from "./sections/pricing/pricing"
 import MoreInfo from "./sections/casestudy/more-info/more-info"
+import Industry from "./sections/industry/industry"
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
       <Hero />
       <About />
       <CaseStudy />
+      
       <Pricing />
+      <Industry/>
     </>
   )
 }

@@ -41,3 +41,8 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+
+.CaseStudy-Info-Heading h1{
+  color: rgb(0, 133, 0) !important;
+}

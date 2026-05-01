@@ -31,13 +31,21 @@
 
 .MoreInfo-Problem {
   padding: 50px;
-  background-color: red !important;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.MoreInfo-Problem-Heading{
+    width: 50%;
+    line-height: 110%;
 }
 
 .MoreInfo-Problem-Parent {
   gap: 20px;
   display: flex;
-  padding: 50px;
+  /* padding: 50px; */
   overflow: scroll;
 }
 
