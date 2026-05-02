@@ -61,7 +61,7 @@ const CaseStudy = () => {
                             </Box>
                             <Box>
                                 <Button backgroundColor="LiteWhite" rounded="large" size="large" color="dark">Vist webiste</Button>
-                                <Button onClick={() => openModals(data)} backgroundColor="Brand" rounded="large" size="large" color="light">Learn more</Button>
+                                <Button onClick={() => openModals(data)} backgroundColor="Brand" rounded="large" size="large" color="light">View full case study</Button>
                             </Box>
                         </Box>
                     </Box>

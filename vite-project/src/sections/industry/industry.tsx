@@ -10,6 +10,8 @@ import Button from "../../system/button/button"
 
 const Industry = () => {
 
+    const [active, setActive] = useState(0)
+
     interface Service {
         name: string,
         description: string[]
@@ -27,8 +29,9 @@ const Industry = () => {
 
 
 
-    const showService = (services: Industry) => {
+    const showService = (services: Industry, i:number) => {
         setService(services)
+        setActive(i)
     }
 
 
@@ -37,18 +40,16 @@ const Industry = () => {
     return (
         <Section className="Industry">
             <Box className="Industry-Left">
-                {IndustryData.map((data: Industry, index) => (
-                    <Button key={index} onClick={() => showService(data)}>{data.industry}</Button>
+                {IndustryData.map((data: Industry, i) => (
+                    <Button backgroundColor="LiteWhite"  className={active === i ? 'active': ""} size="large"  rounded="medium" key={i} onClick={() => showService(data, i)}>{data.industry}</Button>
                 ))}
             </Box>
             <Box className="Industry-Right">
                 {service.services.map((data: Service, index) => (
-                    <Box key={index} backgroundColor="LiteWhite" className="Industry-Right-Box">
+                    <Box borderRadius="half" key={index} backgroundColor="LiteWhite" className="Industry-Right-Box">
                         <Text font="playful" >{data.name}</Text>
-                        {data.description.map((data: string) => (
-                            <ul>
-                                <li>{data}</li>
-                            </ul>
+                        {data.description.map((data: string, index) => (    
+                            <Text size="small" key={index}>{data}</Text>
                         ))}
                     </Box>
                 ))}

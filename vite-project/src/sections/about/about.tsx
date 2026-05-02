@@ -22,9 +22,6 @@ const About = () => {
                         <Text color="black">3 years of exprince</Text>
                     </Box>
                 </Box>
-                <Box backgroundColor="White">
-                    <Text size="small">Join over 70+ happy customers arround the world</Text>
-                </Box>
             </Box>
         </Section>
     )

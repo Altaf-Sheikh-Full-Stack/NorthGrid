@@ -5,7 +5,7 @@ const casedata = [
     {
 
         img: img, 
-        name:"How we increased checkout conversion from 1.9% to 2.4% in weeks by fixing cart abandonment problem",
+        name:"The checkout mistake that was costing 1 in 4 sales (and how we fixed it)",
         heading: "Linkmatch.com is a end to end ai powered CRM software ",        
         tech: {
 

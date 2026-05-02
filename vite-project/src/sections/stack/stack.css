@@ -1,0 +1,19 @@
+.Stack{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.Stack-Box{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Stack-Box-Info{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}

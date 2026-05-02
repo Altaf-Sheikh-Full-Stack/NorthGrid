@@ -18,8 +18,8 @@ interface TextProb {
 const sizeStyles: Record<Size, { calc: string }> = {
     small: { calc: "18px" },
     medium: { calc: "22px" },
-    semiLarge: { calc: "44px" },
-    large: { calc: "50px" }
+    semiLarge: { calc: "clamp(1rem, 1.2rem + min(100vw, 1920px) / 50, 3rem)" },
+    large: { calc: "clamp(2rem, 1.2rem + min(100vw, 1920px) / 50, 15rem)" }
 }
 
 const fontStyles: Record<Font, { family: string }> = {

@@ -18,16 +18,26 @@ const Hero = () => {
                     <Text color="lite" >Then you’re in the right place. At (CompanyName), we build modern, AI-powered systems from the ground up—designed around how your customers actually use your product.</Text>
                 </Box>
                 <Box className="Hero-info-buttons" backgroundColor="Brand">
-                    <Button backgroundColor="White" rounded="large" size="large" color="dark">Let's have a quick chat</Button>
+                    <Button backgroundColor="LiteWhite" rounded="large" size="large" color="dark">Let's have a quick chat</Button>
                 </Box>
             </Box>
             <Box className="Hero-Content">
-                <Box className="Hero-Content-Child-1">
-                   
-                        <img className="blur"  src={img1} alt="If image not load please update your browser" loading="lazy" fetchPriority="high" />
-                  
 
+                <img className="blur" src={img1} alt="If image not load please update your browser" loading="lazy" fetchPriority="high" />
+                <Box className="Hero-Content-Child" backgroundColor="LiteBlack">
+                    <Box borderRadius="half" backgroundColor="White" padding="half">
+                        <Text color="black">70+ Happy client</Text>
+                    </Box>
+                    <Box borderRadius="half" backgroundColor="White" padding="half">
+                        <Text color="black">100% Success rate</Text>
+                    </Box>
+
+
+                    <Box borderRadius="half" backgroundColor="White" padding="half">
+                        <Text color="black">Top rated</Text>
+                    </Box>
                 </Box>
+
             </Box>
         </Section>
     )
