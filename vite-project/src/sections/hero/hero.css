@@ -71,3 +71,19 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .Hero-Content-Child p{
+    font-size: 16px  !important;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .Hero-Content-Child p{
+    font-size: 10px  !important;
+  }
+  .Hero-Content-Child div{
+    padding: 15px !important;
+  }
+}

@@ -1,26 +1,16 @@
 const stackData = [
     {
-        name: "Core Stack",
-        items: ["React", "Node.js (Express)", "PostgreSQL", "Figma"]
+        name: "Design",
+        items: ["Figma", "UI/UX", "User Research", "Behavioral Insights"],
     },
     {
-        name: "Product Development",
-        items: ["REST APIs", "GraphQL", "Authentication", "Payment Integration"]
+        name: "Development",
+        items: ["Frontend", "Backend", "Machine Learning", "Data Analytics"],
     },
     {
-        name: "Infrastructure",
-        items: ["AWS (EC2, S3)", "Docker", "Cloudflare"]
+        name: "Distribution",
+        items: ["Sales", "Marketing", "Advertising", "Monetization"],
     },
-    {
-        name: "Delivery & Quality",
-        items: ["Git", "CI/CD (GitHub Actions)", "Testing (Jest, Cypress)"]
-    },
-    {
-        name: "Additional Experience",
-        items: ["PHP", "MongoDB", "AI APIs (OpenAI, Claude)"]
-    }
 ];
 
-
-
-export default stackData
+export default stackData;

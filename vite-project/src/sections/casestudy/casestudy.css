@@ -1,7 +1,6 @@
 .CaseStudy {
-
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding-bottom: 40px;
 }
 
 .CaseStudy-carousel {
@@ -9,14 +8,24 @@
   display: flex;
   overflow: auto;
   gap: 30px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
 }
 
-.CaseStudy-Carousel::-webkit-scrollbar{
+.CaseStudy-carousel::-webkit-scrollbar {
   display: none;
 }
 
+.CaseStudy-Direction {
+  width: 100% !important;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 50px;
+}
+
 .CaseStudy-Box {
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -25,14 +34,14 @@
 }
 
 .CaseStudy-Box-Imgs {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .CaseStudy-Img {
   height: 500px;
   width: 500px;
   object-fit: cover;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
 
 .CaseStudy-Info {
@@ -42,7 +51,41 @@
   justify-content: space-between;
 }
 
-
-.CaseStudy-Info-Heading h1{
+.CaseStudy-Info-Heading h1 {
   color: rgb(0, 133, 0) !important;
+}
+
+.CaseStudy-Info-Buttons{
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .CaseStudy-Box {
+    flex-direction: column;
+    flex: 0 0 50%;
+  }
+
+  
+
+  .CaseStudy-Info {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .CaseStudy-carousel {
+    padding: 10px;
+    padding-block: 50px;
+  }
+  .CaseStudy-Img {
+    height: 300px;
+    width: 80vw;
+  }
+
+  .CaseStudy-Info{
+    padding: 20px;
+    
+  }
 }

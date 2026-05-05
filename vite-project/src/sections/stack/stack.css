@@ -1,19 +1,42 @@
-.Stack{
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+.Stack {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.Stack-Box{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+
+
+.Stack-Box-Child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.Stack-Box-Child-Buttons {
+  display: flex;
+  gap: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .Stack{
     padding: 20px;
-}
+    padding-block: 50px;
+  }
 
-.Stack-Box-Info{
-    display: flex;
-    gap: 10px;
+  .Stack-Box-Child{
     flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .Stack-Box-Child-Buttons {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }

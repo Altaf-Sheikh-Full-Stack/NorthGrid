@@ -41,20 +41,20 @@ const Navbar = () => {
     return (
 
         <Section>
-            <Section className='Navbar' >
+            <Section className='Navbar' backgroundColor="LiteWhite" >
 
-                <Box className='Navbar-Content' >
+                <Box className='Navbar-Content' backgroundColor="LiteWhite" >
                     <Text font="playful" >NorthGrid</Text>
                     <Text size="small">About us</Text>
                     <Text size="small"> <p ref={dorpdown} onPointerEnter={Show} >Solutions</p> </Text>
                     <Text size="small">CaseStudy</Text>
                     <Text size="small">Pricing</Text>
                 </Box>
-                <Button backgroundColor="Brand" size="large" color="light" rounded="large">Book a meeting</Button>
+               <a href="https://calendly.com/defaultcompny0/30min"> <Button backgroundColor="Brand" size="large" color="light" rounded="large">Book a meeting</Button></a>
             </Section>
 
 
-            <Section className='Navbar-Mobile' >
+            <Section backgroundColor="LiteWhite" className='Navbar-Mobile' >
                 <Text font="playful" >NorthGrid</Text>
 
                 <Box className='Navbar-Mobile-Content' >

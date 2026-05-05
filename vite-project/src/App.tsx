@@ -6,17 +6,20 @@ import Pricing from "./sections/pricing/pricing"
 import MoreInfo from "./sections/casestudy/more-info/more-info"
 import Industry from "./sections/industry/industry"
 import Stack from "./sections/stack/stack"
+import Last from "./sections/La/last"
+
 const App = () => {
   return (
     <>
       <MoreInfo />
       <Navbar />
       <Hero />
-      <About />
       <CaseStudy />
+      <About />
       <Industry />
       <Stack />
       <Pricing />
+      <Last/>
     </>
   )
 }

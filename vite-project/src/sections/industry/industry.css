@@ -1,23 +1,35 @@
 .Industry {
   display: flex;
+  width: 100%;
+  gap: 20px;
+  margin: auto;
+}
+
+.Industry-Section {
   width: 100vh;
+  padding: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
 
 .Industry-Left {
   width: 20%;
-  /* background-color: red !important; */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  align-items: start;
 }
 
 .Industry-Right {
   width: 80%;
+}
+
+.Industry-Right-Card {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 50px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
 }
 
 .Industry-Right-Box {
@@ -27,8 +39,35 @@
   gap: 30px;
 }
 
-
-.active{
-  background-color: black !important;
+.active {
+  background-color: blueviolet !important;
   color: white !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+}
+
+@media screen and (max-width: 800px) {
+  .Industry {
+    flex-direction: column;
+  }
+
+  .Industry-Section{
+    padding: 20px;
+    gap: 20px;
+    padding-block: 50px;
+  }
+
+  .Industry-Left {
+    flex-direction: row;
+    flex: 0 0 1;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .Industry-Right{
+    width: 100%;
+  }
+
+  .Industry-Right-Card {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }

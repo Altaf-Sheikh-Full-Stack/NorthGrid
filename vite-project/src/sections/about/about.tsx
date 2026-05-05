@@ -1,28 +1,29 @@
 import Section from "../../system/section/section"
 import Text from "../../system/text/text"
 import './about.css'
+import AboutData from "./about-data"
 
 import Box from "../../system/box/box"
 
 const About = () => {
     return (
         <Section className="About" >
-            <Text className="About-heading" type="subHeading" size="semiLarge" font="playful">Our mission is to assist startups and enterprises in creating an emotional bond between their products and satisfied, engaged customers.</Text>
-            <Box className="About-Stats" backgroundColor="White">
-                <Box className="About-Stats-Client" backgroundColor="White">
-                    <Box borderRadius="half" backgroundColor="LiteWhite" padding="half">
-                        <Text color="black">70+ client</Text>
-                    </Box>
-                    <Box borderRadius="half" backgroundColor="LiteWhite" padding="half">
-                        <Text color="black">100% stafiction rate</Text>
-                    </Box>
-
-
-                    <Box borderRadius="half" backgroundColor="LiteWhite" padding="half">
-                        <Text color="black">3 years of exprince</Text>
-                    </Box>
+            <Text size="semiLarge" font="playful">What do you get
+                by choosing NorthGrid?</Text>
+            {AboutData.map((data) => (
+                <Box borderRadius="half" backgroundColor="White" key={data.id} className={`About-Card-${data.id}`}>
+                   
+                   
+                        {data.items.map((text, textKey) => (
+                            <Box backgroundColor="White">
+                            <Text className="About-Card-Info-Text" key={textKey}>✔  {text}</Text>
+                            <br />
+                            <hr />
+                            </Box>
+                        ))}
+                    
                 </Box>
-            </Box>
+            ))}
         </Section>
     )
 }

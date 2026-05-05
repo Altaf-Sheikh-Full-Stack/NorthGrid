@@ -2,7 +2,7 @@
 
 const IndustryData = [
     {
-        industry: "E-commerce",
+        industry: "Ecommerce",
         services: [
             {
                 name: "Conversion & Checkout Infrastructure",
@@ -41,7 +41,7 @@ const IndustryData = [
 
 
     {
-        industry: "SaaS / Tech",
+        industry: "SaaS",
         services: [
             {
                 name: "Onboarding & Activation Systems",
@@ -118,7 +118,7 @@ const IndustryData = [
 
 
     {
-        industry: "Real Estate",
+        industry: "RealEstate",
         services: [
             {
                 name: "Lead & CRM Infrastructure",
@@ -196,7 +196,7 @@ const IndustryData = [
 
 
     {
-        industry: "Education / Coaching",
+        industry: "Education",
         services: [
             {
                 name: "Learning Platform & Student Systems",

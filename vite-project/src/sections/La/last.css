@@ -1,0 +1,25 @@
+.Last {
+  padding: 50px;
+  box-shadow: rgba(128, 128, 128, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.calendly-inline-widget {
+  width: 120%;
+  height: 700px;
+}
+
+@media screen and (max-width: 800px) {
+  .Last {
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    padding-block: 50px;
+  }
+  .calendly-inline-widget {
+    height: 900px;
+    width: 100%;
+  }
+}
