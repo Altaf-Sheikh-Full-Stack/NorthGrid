@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/Component 1.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>vite-project</title>
+  <title>NorthGrid - We grow your business</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -15,17 +15,45 @@
 
 <body>
   <div id="root">
-    <div id="Loading">Thinking...</div>
+    <div id="Loading">
+      <div id="loader"></div>
+      <p>Computing the content</p>
+    </div>
+
   </div>
   <script type="module" src="/src/main.tsx" defer></script>
 
   <style>
-    #Loading{
+    #Loading {
+
       display: flex;
-      width: 100%;
-      height: 100vh;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      gap:20px;
+      flex-direction: column;
+    }
+
+    #loader {
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      border-top: 2px blueviolet solid;
+      border-bottom: 2px blueviolet solid;
+      border-left: 2px blueviolet solid;
+      border-top: 2px blueviolet solid;
+      animation: spin 1.5s linear infinite;
+    }
+
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
   </style>
 

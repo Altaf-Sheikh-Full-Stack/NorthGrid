@@ -7,7 +7,6 @@
 .MoreInfo-img {
   width: 50%;
   background-color: whitesmoke;
-  padding: 20px;
 }
 
 .MoreInfo-img img {
@@ -44,18 +43,15 @@
 
 .MoreInfo-Problem-Parent {
   gap: 20px;
-  display: flex;
-  /* padding: 50px; */
+  display: grid;
   overflow: scroll;
 }
 
 .MoreInfo-Problem-Card {
   padding: 20px;
   display: flex;
-  flex-direction: column;
   gap: 20px;
   justify-content: space-around;
-  width: 400px;
   height: 600px;
   flex: 0 0 400px;
 }
@@ -72,8 +68,55 @@
 .MoreInfo-Problem-Card-Solution {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
   height: 100%;
   width: 100%;
+}
+
+.MoreInfo-Info-Text{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+@media screen and (max-width: 700px) {
+    .MoreInfo-Problem-Card{
+      flex-direction: column;
+    }
+
+    .MoreInfo {
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .MoreInfo-img{
+      width: 100%;
+    }
+
+    .MoreInfo-Info{
+      width: 100%;
+    }
+
+    .MoreInfo-Info-Buttons{
+      padding-block: 50px;
+    }
+
+    
+
+    .MoreInfo-Info{
+      padding: 0px;
+    }
+
+    .MoreInfo-Problem{
+      padding: 20px;
+    }
+
+
+    .MoreInfo-Problem-Heading{
+      width: 100%;
+    }
 }

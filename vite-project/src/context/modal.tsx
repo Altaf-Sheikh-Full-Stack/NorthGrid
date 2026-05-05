@@ -4,25 +4,17 @@ import { create } from "zustand"
 
 type MoreType = {
     problem: string,
-    solution: string
+    solution: string[]
 }
 
-
-type Tech = {
-    research: string[],
-    design: string[],
-    frontend: string[],
-    backend: string[],
-    testing: string[],
-    deployment: string[],
-    markting: string[]
-}
 
 interface ModalContent {
     img: string
     name: string,
     more: MoreType[]
-    tech: Tech
+    outcome: string[]
+    heading:string
+    description:string
 }
 
 interface ModalStore {

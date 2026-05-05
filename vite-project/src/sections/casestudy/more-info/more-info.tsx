@@ -20,7 +20,10 @@ const MoreInfo = () => {
 
 
                 <Box className="MoreInfo-Info">
-                    <Text size="large" type="heading" font="playful">{modal?.name}</Text>
+                    <Box className="MoreInfo-Info-Text">
+                        <Text size="semiLarge" type="subHeading" font="playful">{modal?.heading}</Text>
+                        <Text>{modal?.description}</Text>
+                    </Box>
                     <Box className="MoreInfo-Info-Buttons">
                         <Button onClick={close} backgroundColor="LiteWhite" rounded="large" size="large">Close</Button>
                         <Button backgroundColor="Brand" color="light" rounded="large" size="large">Visit website</Button>
@@ -36,7 +39,12 @@ const MoreInfo = () => {
                     {modal?.more.map((data) => (
                         <Box className="MoreInfo-Problem-Card" backgroundColor="LiteWhite" borderRadius="half">
                             <Box backgroundColor="White" borderRadius="half" className="MoreInfo-Problem-Card-Problem"><Text >{data.problem}</Text></Box>
-                            <Box className="MoreInfo-Problem-Card-Solution" borderRadius="half"><Text>{data.solution}</Text></Box>
+
+                            <Box className="MoreInfo-Problem-Card-Solution" borderRadius="half">
+                                {data.solution.map((data) => (
+                                    <Text>{data}</Text>
+                                ))}
+                            </Box>
                         </Box>
                     ))}
                 </Box>

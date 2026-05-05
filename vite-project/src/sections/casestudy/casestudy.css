@@ -40,8 +40,8 @@
 .CaseStudy-Img {
   height: 500px;
   width: 500px;
-  object-fit: cover;
-  /* border-radius: 50px; */
+  object-fit: contain;
+ 
 }
 
 .CaseStudy-Info {
