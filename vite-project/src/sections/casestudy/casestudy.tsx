@@ -35,30 +35,30 @@ const CaseStudy = () => {
     const divRef = useRef<HTMLDivElement | null>(null);
 
 
-    const ScrollLeft = () => {
+    // const ScrollLeft = () => {
 
 
-        const elem = divRef.current
+    //     const elem = divRef.current
 
-        elem?.scrollBy({
-            left: -1500,
-            behavior: "smooth",
-        });
-
-
-    }
-
-    const ScrollRight = () => {
-
-        const elem = divRef.current
-
-        elem?.scrollBy({
-            left: 1500,
-            behavior: "smooth",
-        });
+    //     elem?.scrollBy({
+    //         left: -1500,
+    //         behavior: "smooth",
+    //     });
 
 
-    }
+    // }
+
+    // const ScrollRight = () => {
+
+    //     const elem = divRef.current
+
+    //     elem?.scrollBy({
+    //         left: 1500,
+    //         behavior: "smooth",
+    //     });
+
+
+    // }
 
 
     const setModal = ModalContext((e) => e.openModal)
