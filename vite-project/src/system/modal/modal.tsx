@@ -2,7 +2,7 @@ import './modal.css'
 import Section from '../section/section'
 import { createPortal } from 'react-dom'
 import { useEffect } from 'react'
-import { AnimatePresence, motion } from 'motion/react'
+import { motion } from 'motion/react'
 
 
 interface ModalProbs {
